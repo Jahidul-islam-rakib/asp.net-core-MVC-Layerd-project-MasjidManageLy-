@@ -1,0 +1,39 @@
+﻿@model MasjidManageLyModel.Entities.Volunteer
+
+@{
+	ViewData["title"] = "VolunteerCreate";
+}
+
+<h1>Create a volunteer</h1>
+
+<hr />
+
+<div class="row">
+	<div class="col-md-6">
+		<form asp-action="Create">
+			<div class="form-group mb-3">
+				<label asp-for="VName"></label>
+				<input asp-for="VName" class="form-control" />
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="VRole"></label>
+				<input asp-for="VRole" class="form-control" />
+			</div>
+
+			<div class="form-group mb-3">
+				<label asp-for="VContactNumber"></label>
+				<input asp-for="VContactNumber" class="form-control" />
+			</div>
+
+			<div class="form-group mb-3">
+				<input type="submit" value="submit" class="btn btn-primary" />
+				<input type="reset" value="reset" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="mt-4">
+	<a class="btn btn-primary" asp-action="Index">Back to List</a>
+</div>

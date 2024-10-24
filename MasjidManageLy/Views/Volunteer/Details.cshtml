@@ -1,0 +1,23 @@
+﻿@model MasjidManageLyModel.Entities.Volunteer
+
+@{
+	ViewData["title"] = "VolunteerDetails";
+}
+
+<h1> Volunteer Details</h1>
+<hr />
+
+<dl class="row">
+	<dd class="col-sm-2">Volunteer Name   :</dd>
+	<dt class="col-sm-10">@Model.VName</dt>
+
+	<dd class="col-sm-2">Role :</dd>
+	<dt class="col-sm-10">@Model.VRole</dt>
+
+	<dd class="col-sm-2">Contact number :</dd>
+	<dt class="col-sm-10">@Model.VContactNumber</dt>
+</dl>
+
+<div class="mt-3">
+	<a class="btn btn-primary" asp-action="Index">Back to List</a>
+</div>
